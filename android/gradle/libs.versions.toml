@@ -1,0 +1,54 @@
+[versions]
+agp = "9.0.1"
+coreKtx = "1.18.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+lifecycleRuntimeKtx = "2.10.0"
+activityCompose = "1.13.0"
+kotlin = "2.3.21"
+composeBom = "2026.05.01"
+navigationCompose = "2.9.8"
+timber = "5.0.1"
+ypay = "3.1.0"
+yandexLogin = "3.2.1"
+material = "1.14.0"
+zxing = "4.3.0"
+okhttp = "4.12.0"
+kotlinxSerialization = "1.7.3"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+ypay-flows-assistant = { group = "com.yandex.pay", name = "assistant", version.ref = "ypay" }
+ypay-flows-auth = { group = "com.yandex.pay", name = "auth", version.ref = "ypay" }
+ypay-flows-pay-with-redirect = { group = "com.yandex.pay", name = "pay-with-redirect", version.ref = "ypay" }
+ypay-flows-inapp = { group = "com.yandex.pay", name = "inapp", version.ref = "ypay" }
+ypay-flows-quickpay = { group = "com.yandex.pay", name = "quickpay", version.ref = "ypay" }
+ypay-flows-inventory = { group = "com.yandex.pay", name = "inventory", version.ref = "ypay" }
+yandex-login = { group = "com.yandex.android", name = "authsdk", version.ref = "yandexLogin" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+zxing-android-embedded = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxing" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
