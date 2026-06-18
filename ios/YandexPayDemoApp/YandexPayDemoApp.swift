@@ -21,7 +21,7 @@ struct YandexPayDemoApp: App {
       environment: .sandbox,
       locale: .ru,
       modules: [
-        YPayAuth.module(),
+        YPayAuth.module(merchant: merchant),
         YQuickPay.module(
           stateListener: QuickPayViewModel.shared,
           merchant: merchant,
