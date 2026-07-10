@@ -1,4 +1,4 @@
-[![YandexPayKit](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=YandexPayKit&version=3.1.0)](https://mvnrepository.com/artifact/com.yandex.pay)
+[![YandexPayKit](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=YandexPayKit&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay)
 
 # Yandex Pay Kit Android Sample
 
@@ -20,12 +20,12 @@ Yandex Pay Kit предоставляет готовые компоненты д
 - [Конфигурация](#конфигурация)
 - [Запуск](#запуск)
 - [Обзор модулей](#обзор-модулей)
-  - [Авторизация (AuthScreen)](#авторизация-authscreen)
-  - [Оплата (PayRedirectScreen)](#оплата-payredirectscreen)
-  - [Пэй виджет (PayWidgetScreen)](#пэй-виджет-paywidgetscreen)
-  - [Виджет выгод и ассистент (AssistantScreen)](#виджет-выгод-и-ассистент-assistantscreen)
-  - [Быстрая оплата с QR (CPQRScreen)](#быстрая-оплата-с-qr-cpqrscreen)
-  - [Бейджи (InventoryScreen)](#бейджи-inventoryscreen)
+    - [Авторизация (AuthScreen)](#авторизация-authscreen)
+    - [Оплата (PayRedirectScreen)](#оплата-payredirectscreen)
+    - [Пэй виджет (PayWidgetScreen)](#пэй-виджет-paywidgetscreen)
+    - [Виджет выгод и ассистент (AssistantScreen)](#виджет-выгод-и-ассистент-assistantscreen)
+    - [Быстрая оплата с QR (CPQRScreen)](#быстрая-оплата-с-qr-cpqrscreen)
+    - [Бейджи (InventoryScreen)](#бейджи-inventoryscreen)
 - [Частые проблемы](#частые-проблемы)
 
 ## Требования
@@ -59,7 +59,7 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ### Авторизация (AuthScreen)
 
-[![Auth](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=Auth&version=3.1.0)](https://mvnrepository.com/artifact/com.yandex.pay/auth)
+[![Auth](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=Auth&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/auth)
 
 <img src="_assets/auth.png" alt="auth.png" height="420">
 
@@ -79,7 +79,7 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ### Оплата (PayRedirectScreen)
 
-[![PayWithRedirect](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/pay-with-redirect/badge.svg?subject=Redirect&version=3.1.0)](https://mvnrepository.com/artifact/com.yandex.pay/pay-with-redirect)
+[![PayWithRedirect](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/pay-with-redirect/badge.svg?subject=Redirect&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/pay-with-redirect)
 
 <img src="_assets/redirect.png" alt="redirect.png" height="420">
 
@@ -93,7 +93,7 @@ SDK позволяет добавить в приложение оплату п�
 
 ### Пэй виджет (PayWidgetScreen)
 
-[![PayWidget](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inapp/badge.svg?subject=PayWidget&version=3.1.0)](https://mvnrepository.com/artifact/com.yandex.pay/inapp)
+[![PayWidget](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inapp/badge.svg?subject=PayWidget&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/inapp)
 
 <img src="_assets/pay.png" alt="pay.png" height="420">
 
@@ -115,7 +115,7 @@ SDK позволяет добавить в приложение оплату п�
 
 ### Виджет выгод и ассистент (AssistantScreen)
 
-[![Assistant](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/assistant/badge.svg?subject=Assistant&version=3.1.0)](https://mvnrepository.com/artifact/com.yandex.pay/assistant)
+[![Assistant](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/assistant/badge.svg?subject=Assistant&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/assistant)
 
 <img src="_assets/assistant.png" alt="assistant.png" height="420">
 
@@ -129,7 +129,7 @@ SDK позволяет добавить в приложение оплату п�
 
 ### Быстрая оплата с QR (CPQRScreen)
 
-[![CPQR](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/quickpay/badge.svg?subject=CPQR&version=3.1.0)](https://mvnrepository.com/artifact/com.yandex.pay/quickpay)
+[![CPQR](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/quickpay/badge.svg?subject=CPQR&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/quickpay)
 
 <img src="_assets/quickpay.png" width="280">
 
@@ -143,7 +143,7 @@ QR‑код от Яндекс Пэй позволяет добавить в мо
 
 ### Бейджи (InventoryScreen)
 
-[![Inventory](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inventory/badge.svg?subject=Inventory&version=3.1.0)](https://mvnrepository.com/artifact/com.yandex.pay/inventory)
+[![Inventory](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inventory/badge.svg?subject=Inventory&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/inventory)
 
 <img src="_assets/inventory.png" width="200">
 
@@ -155,24 +155,24 @@ QR‑код от Яндекс Пэй позволяет добавить в мо
 
 - **После авторизации приложение снова просит залогиниться**
 
-    Так работает [двойная авторизация](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/#concept). Первый логин позволяет получить токен для контура Яндекс ID, который вы можете использовать для авторизации пользователя внутри вашего сервиса. Второй логин — для авторизации внутри контура Яндекс Пэй. Он позволяет работать с виджетами и оплатой. Подробнее и схема работы — [в документации](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/).
+  Так работает [двойная авторизация](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/#concept). Первый логин позволяет получить токен для контура Яндекс ID, который вы можете использовать для авторизации пользователя внутри вашего сервиса. Второй логин — для авторизации внутри контура Яндекс Пэй. Он позволяет работать с виджетами и оплатой. Подробнее и схема работы — [в документации](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/).
 
 - **Не получается залогиниться на эмуляторе**
 
-    Авторизация не поддерживает эмулятор, так как для обеспечения безопасности SDK использует DPoP-аутентификацию. Она требует [защищенного аппаратного хранилища ключей (TEE/Strongbox)](https://developer.android.com/privacy-and-security/keystore#StrongBoxKeyMint), который отсутствует на эмуляторах.
+  Авторизация не поддерживает эмулятор, так как для обеспечения безопасности SDK использует DPoP-аутентификацию. Она требует [защищенного аппаратного хранилища ключей (TEE/Strongbox)](https://developer.android.com/privacy-and-security/keystore#StrongBoxKeyMint), который отсутствует на эмуляторах.
 
 - **Получаю сообщение "Эмулятор не поддерживается", но у меня физическое устройство**
 
-    На вашем устройстве отсутствует [защищенное аппаратное хранилище ключей](https://developer.android.com/privacy-and-security/keystore#StrongBoxKeyMint), такое устройство не поддерживается SDK. Попробуйте другое устройство.
+  На вашем устройстве отсутствует [защищенное аппаратное хранилище ключей](https://developer.android.com/privacy-and-security/keystore#StrongBoxKeyMint), такое устройство не поддерживается SDK. Попробуйте другое устройство.
 
 - **Получаю ошибку 500 при попытке авторизации**
 
-    Скорее всего, указаны некорректные значения или неверные скоупы у YANDEX_CLIENT_ID / YANDEX_PAY_CLIENT_ID. Для корректной работы сервиса нужно указать специальные скоупы, которые можно получить только у команды поддержки при интеграции SDK в ваше приложение. Если у вас нет client_id, выданного командой Пэй, воспользуйтесь параметрами, зашитыми в репозитории.
+  Скорее всего, указаны некорректные значения или неверные скоупы у YANDEX_CLIENT_ID / YANDEX_PAY_CLIENT_ID. Для корректной работы сервиса нужно указать специальные скоупы, которые можно получить только у команды поддержки при интеграции SDK в ваше приложение. Если у вас нет client_id, выданного командой Пэй, воспользуйтесь параметрами, зашитыми в репозитории.
 
-    Для дебага также рекомендуется воспользоваться Network Inspector или Charles для проверки результатов запросов при авторизации или отображении виджетов.
+  Для дебага также рекомендуется воспользоваться Network Inspector или Charles для проверки результатов запросов при авторизации или отображении виджетов.
 
 - **Авторизация вроде бы прошла, но состояние виджетов не изменилось**
 
-    Если вы меняли подпись приложения (собирали с keystore, отличным от того, что зашит в репозитории), авторизация перестанет работать, так как SHA256 указывается при настройке clientId. Пожалуйста, используйте `app/debug.keystore` для подписи демо-приложения.
+  Если вы меняли подпись приложения (собирали с keystore, отличным от того, что зашит в репозитории), авторизация перестанет работать, так как SHA256 указывается при настройке clientId. Пожалуйста, используйте `app/debug.keystore` для подписи демо-приложения.
 
-    Также может помочь тестирование на устройстве, на которым не установлены другие приложения Яндекса – чтобы минимизировать риск проблем, связанных с разными версиями LoginSDK у разных приложений.
+  Также может помочь тестирование на устройстве, на которым не установлены другие приложения Яндекса – чтобы минимизировать риск проблем, связанных с разными версиями LoginSDK у разных приложений.
