@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/yandexmobile/yandex-pay-ios.git",
       "state" : {
-        "revision" : "29c424b7caf3e8872c906340a5c44d952b03ec48",
-        "version" : "2.5.3"
+        "revision" : "61bc718fcafe8274785a8bc72611771e7ccf0f0d",
+        "version" : "2.5.4"
       }
     }
   ],
