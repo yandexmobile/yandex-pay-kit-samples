@@ -1,0 +1,11 @@
+# Скопируйте в android/local.properties (файл не коммитится) и подставьте свои значения.
+# Используется в app/build.gradle.kts для manifestPlaceholders.
+
+# APPLICATION_ID=com.yandex.quickpay.sample
+
+YANDEX_CLIENT_ID=b3523a6f87854ad4987cee1d0596a151
+# Deep-link/OAuth placeholders for the native Yandex Pay auth SDK manifest.
+YANDEX_PAY_CLIENT_ID=b3523a6f87854ad4987cee1d0596a151
+YANDEX_OAUTH_HOST=oauth.yandex.ru
+QUICKPAY_MERCHANT_ID=0df18b44-cb01-4263-b05f-6de81e9b5692
+QUICKPAY_ENVIRONMENT=SANDBOX

@@ -1,0 +1,231 @@
+PODS:
+  - AppMetricaCore (5.16.1):
+    - AppMetricaCoreUtils (= 5.16.1)
+    - AppMetricaEncodingUtils (= 5.16.1)
+    - AppMetricaFMDB (= 5.16.1)
+    - AppMetricaHostState (= 5.16.1)
+    - AppMetricaIdentifiers (= 5.16.1)
+    - AppMetricaKeychain (= 5.16.1)
+    - AppMetricaLog (= 5.16.1)
+    - AppMetricaNetwork (= 5.16.1)
+    - AppMetricaPlatform (= 5.16.1)
+    - AppMetricaProtobuf (= 5.16.1)
+    - AppMetricaProtobufUtils (= 5.16.1)
+    - AppMetricaStorageUtils (= 5.16.1)
+  - AppMetricaCoreUtils (5.16.1):
+    - AppMetricaLog (= 5.16.1)
+  - AppMetricaEncodingUtils (5.16.1):
+    - AppMetricaCoreUtils (= 5.16.1)
+    - AppMetricaLog (= 5.16.1)
+    - AppMetricaPlatform (= 5.16.1)
+  - AppMetricaFMDB (5.16.1)
+  - AppMetricaHostState (5.16.1):
+    - AppMetricaCoreUtils (= 5.16.1)
+    - AppMetricaLog (= 5.16.1)
+  - AppMetricaIdentifiers (5.16.1):
+    - AppMetricaKeychain (= 5.16.1)
+    - AppMetricaLogSwift (= 5.16.1)
+    - AppMetricaPlatform (= 5.16.1)
+    - AppMetricaStorageUtils (= 5.16.1)
+    - AppMetricaSynchronization (= 5.16.1)
+  - AppMetricaKeychain (5.16.1):
+    - AppMetricaCoreUtils (= 5.16.1)
+    - AppMetricaLog (= 5.16.1)
+    - AppMetricaStorageUtils (= 5.16.1)
+  - AppMetricaLog (5.16.1)
+  - AppMetricaLogSwift (5.16.1):
+    - AppMetricaLog (= 5.16.1)
+  - AppMetricaNetwork (5.16.1):
+    - AppMetricaCoreUtils (= 5.16.1)
+    - AppMetricaLog (= 5.16.1)
+    - AppMetricaPlatform (= 5.16.1)
+  - AppMetricaPlatform (5.16.1):
+    - AppMetricaCoreUtils (= 5.16.1)
+    - AppMetricaLog (= 5.16.1)
+  - AppMetricaProtobuf (5.16.1)
+  - AppMetricaProtobufUtils (5.16.1):
+    - AppMetricaProtobuf (= 5.16.1)
+  - AppMetricaStorageUtils (5.16.1):
+    - AppMetricaCoreUtils (= 5.16.1)
+    - AppMetricaLog (= 5.16.1)
+  - AppMetricaSynchronization (5.16.1):
+    - AppMetricaLogSwift (= 5.16.1)
+  - Flutter (1.0.0)
+  - yandex_pay_core (2.1.0):
+    - Flutter
+    - YandexPaySDK/YandexPayConfiguration (= 2.5.3)
+  - yandex_pay_quickpay (2.1.0):
+    - Flutter
+    - yandex_pay_core
+    - YandexPaySDK/YandexQuickPay (= 2.5.3)
+  - YandexPaySDK/ExternalBduiAdapter (2.5.3):
+    - YandexPaySDK/FintechBDUIWrapper
+    - YandexPaySDK/FintechPlusSDKInterfaces
+    - YandexPaySDK/FintechSDKAnalyticsInterfaces
+    - YandexPaySDK/FintechSDKAuthInterfaces
+    - YandexPaySDK/FintechSDKBDUICore
+    - YandexPaySDK/FintechSDKBDUIFeatures
+    - YandexPaySDK/FintechSDKCommonEntity
+    - YandexPaySDK/FintechSDKCoreAnalytics
+    - YandexPaySDK/FintechSDKCoreUI
+    - YandexPaySDK/FintechSDKCoreUtils
+    - YandexPaySDK/FintechSDKFontsInterfaces
+    - YandexPaySDK/FintechSDKNetworkImplementation
+    - YandexPaySDK/FintechSDKNetworkInterfaces
+    - YandexPaySDK/FintechSDKRemoteResourcesData
+    - YandexPaySDK/FintechYBSDKInterfaces
+  - YandexPaySDK/FintechBDUIWrapper (2.5.3)
+  - YandexPaySDK/FintechPlusSDKInterfaces (2.5.3)
+  - YandexPaySDK/FintechSDKAnalyticsInterfaces (2.5.3)
+  - YandexPaySDK/FintechSDKAppMetricaAdapter (2.5.3):
+    - AppMetricaCore (~> 5.15)
+    - YandexPaySDK/FintechSDKAnalyticsInterfaces
+  - YandexPaySDK/FintechSDKAuthCoreImplementation (2.5.3)
+  - YandexPaySDK/FintechSDKAuthInterfaces (2.5.3)
+  - YandexPaySDK/FintechSDKAuthorizationScenario (2.5.3)
+  - YandexPaySDK/FintechSDKBDUICore (2.5.3)
+  - YandexPaySDK/FintechSDKBDUIFeatures (2.5.3)
+  - YandexPaySDK/FintechSDKCommonEntity (2.5.3)
+  - YandexPaySDK/FintechSDKCoreAnalytics (2.5.3)
+  - YandexPaySDK/FintechSDKCoreUI (2.5.3)
+  - YandexPaySDK/FintechSDKCoreUtils (2.5.3)
+  - YandexPaySDK/FintechSDKDivKitWidgetsFeatures (2.5.3)
+  - YandexPaySDK/FintechSDKExternalAuthWebView (2.5.3)
+  - YandexPaySDK/FintechSDKFontsAdapter (2.5.3):
+    - YandexPaySDK/FintechSDKFontsInterfaces
+  - YandexPaySDK/FintechSDKFontsInterfaces (2.5.3)
+  - YandexPaySDK/FintechSDKLoaderScreen (2.5.3)
+  - YandexPaySDK/FintechSDKLoginAdapter (2.5.3):
+    - YandexPaySDK/FintechSDKAuthInterfaces
+  - YandexPaySDK/FintechSDKNativeErrorFeature (2.5.3)
+  - YandexPaySDK/FintechSDKNavigationImplementation (2.5.3)
+  - YandexPaySDK/FintechSDKNavigationInterfaces (2.5.3)
+  - YandexPaySDK/FintechSDKNetworkImplementation (2.5.3)
+  - YandexPaySDK/FintechSDKNetworkInterfaces (2.5.3)
+  - YandexPaySDK/FintechSDKPayBoxEntity (2.5.3)
+  - YandexPaySDK/FintechSDKPayBoxResources (2.5.3)
+  - YandexPaySDK/FintechSDKPollingScenario (2.5.3)
+  - YandexPaySDK/FintechSDKQuickPayment (2.5.3)
+  - YandexPaySDK/FintechSDKQuickPaymentEntity (2.5.3)
+  - YandexPaySDK/FintechSDKQuickPaymentShared (2.5.3)
+  - YandexPaySDK/FintechSDKRealTimeAnalyticsAdapter (2.5.3):
+    - YandexPaySDK/FintechSDKAnalyticsInterfaces
+  - YandexPaySDK/FintechSDKRealUserMonitoringAdapter (2.5.3):
+    - YandexPaySDK/FintechSDKAnalyticsInterfaces
+  - YandexPaySDK/FintechSDKRemoteResourcesData (2.5.3)
+  - YandexPaySDK/FintechSDKWebViewFeatures (2.5.3)
+  - YandexPaySDK/FintechYBSDKInterfaces (2.5.3)
+  - YandexPaySDK/YandexPayConfiguration (2.5.3):
+    - YandexPaySDK/FintechSDKAnalyticsInterfaces
+    - YandexPaySDK/FintechSDKAppMetricaAdapter
+    - YandexPaySDK/FintechSDKAuthInterfaces
+    - YandexPaySDK/FintechSDKCommonEntity
+    - YandexPaySDK/FintechSDKCoreUI
+    - YandexPaySDK/FintechSDKCoreUtils
+    - YandexPaySDK/FintechSDKFontsInterfaces
+    - YandexPaySDK/FintechSDKLoginAdapter
+    - YandexPaySDK/FintechSDKNetworkInterfaces
+    - YandexPaySDK/FintechSDKPayBoxEntity
+  - YandexPaySDK/YandexQuickPay (2.5.3):
+    - YandexPaySDK/ExternalBduiAdapter
+    - YandexPaySDK/FintechBDUIWrapper
+    - YandexPaySDK/FintechPlusSDKInterfaces
+    - YandexPaySDK/FintechSDKAnalyticsInterfaces
+    - YandexPaySDK/FintechSDKAppMetricaAdapter
+    - YandexPaySDK/FintechSDKAuthCoreImplementation
+    - YandexPaySDK/FintechSDKAuthInterfaces
+    - YandexPaySDK/FintechSDKAuthorizationScenario
+    - YandexPaySDK/FintechSDKBDUICore
+    - YandexPaySDK/FintechSDKBDUIFeatures
+    - YandexPaySDK/FintechSDKCommonEntity
+    - YandexPaySDK/FintechSDKCoreAnalytics
+    - YandexPaySDK/FintechSDKCoreUI
+    - YandexPaySDK/FintechSDKCoreUtils
+    - YandexPaySDK/FintechSDKDivKitWidgetsFeatures
+    - YandexPaySDK/FintechSDKExternalAuthWebView
+    - YandexPaySDK/FintechSDKFontsAdapter
+    - YandexPaySDK/FintechSDKFontsInterfaces
+    - YandexPaySDK/FintechSDKLoaderScreen
+    - YandexPaySDK/FintechSDKLoginAdapter
+    - YandexPaySDK/FintechSDKNativeErrorFeature
+    - YandexPaySDK/FintechSDKNavigationImplementation
+    - YandexPaySDK/FintechSDKNavigationInterfaces
+    - YandexPaySDK/FintechSDKNetworkImplementation
+    - YandexPaySDK/FintechSDKNetworkInterfaces
+    - YandexPaySDK/FintechSDKPayBoxEntity
+    - YandexPaySDK/FintechSDKPayBoxResources
+    - YandexPaySDK/FintechSDKPollingScenario
+    - YandexPaySDK/FintechSDKQuickPayment
+    - YandexPaySDK/FintechSDKQuickPaymentEntity
+    - YandexPaySDK/FintechSDKQuickPaymentShared
+    - YandexPaySDK/FintechSDKRealTimeAnalyticsAdapter
+    - YandexPaySDK/FintechSDKRealUserMonitoringAdapter
+    - YandexPaySDK/FintechSDKRemoteResourcesData
+    - YandexPaySDK/FintechSDKWebViewFeatures
+    - YandexPaySDK/FintechYBSDKInterfaces
+    - YandexPaySDK/YandexPayConfiguration
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - yandex_pay_core (from `.symlinks/plugins/yandex_pay_core/ios`)
+  - yandex_pay_quickpay (from `.symlinks/plugins/yandex_pay_quickpay/ios`)
+  - YandexPaySDK/YandexQuickPay (from `https://github.com/yandexmobile/yandex-pay-ios.git`, tag `v2.5.3`)
+
+SPEC REPOS:
+  trunk:
+    - AppMetricaCore
+    - AppMetricaCoreUtils
+    - AppMetricaEncodingUtils
+    - AppMetricaFMDB
+    - AppMetricaHostState
+    - AppMetricaIdentifiers
+    - AppMetricaKeychain
+    - AppMetricaLog
+    - AppMetricaLogSwift
+    - AppMetricaNetwork
+    - AppMetricaPlatform
+    - AppMetricaProtobuf
+    - AppMetricaProtobufUtils
+    - AppMetricaStorageUtils
+    - AppMetricaSynchronization
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  yandex_pay_core:
+    :path: ".symlinks/plugins/yandex_pay_core/ios"
+  yandex_pay_quickpay:
+    :path: ".symlinks/plugins/yandex_pay_quickpay/ios"
+  YandexPaySDK:
+    :git: https://github.com/yandexmobile/yandex-pay-ios.git
+    :tag: v2.5.3
+
+CHECKOUT OPTIONS:
+  YandexPaySDK:
+    :git: https://github.com/yandexmobile/yandex-pay-ios.git
+    :tag: v2.5.3
+
+SPEC CHECKSUMS:
+  AppMetricaCore: 711814df28f1b75f2232ecd798a60fb0fdc826db
+  AppMetricaCoreUtils: 5a922f36177a944d58f8a84207efd6d6cf673e83
+  AppMetricaEncodingUtils: 1fc6d2e91e9048f83df7c2724b58d2e9d5cef054
+  AppMetricaFMDB: 005ff44f17f5b534e3c54cc7ffefbe480f37c254
+  AppMetricaHostState: f7f3d6647364c8681601f27e881bf05808445eae
+  AppMetricaIdentifiers: 2bde45276896ffd749017f23d8e76b0ccb14c790
+  AppMetricaKeychain: 0c76fbc8239f8a383418416bbc0ea52f8b25f84f
+  AppMetricaLog: 1416c93d803f89a615c6b523a6d97981acd757f6
+  AppMetricaLogSwift: 1f94dba530a8119cee8458501980f7cdaf1b50d8
+  AppMetricaNetwork: d0a11751b42870ad89e6cb72ad93f39390a2b969
+  AppMetricaPlatform: fd1aa3684ef55817e0303327cae6201e65770ee3
+  AppMetricaProtobuf: ed13c8fbc7e17a0f8385f8f676b7736322fc776a
+  AppMetricaProtobufUtils: ff838fedd01329be068074e877a5e0db207d74ee
+  AppMetricaStorageUtils: 11812b909635f3c301018433a563af86e1e9f6cb
+  AppMetricaSynchronization: 4519548e7cc60ea726dd7413afad5ebf3978c71d
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  yandex_pay_core: 18044e891a771288c8f313e240013ba7b828d460
+  yandex_pay_quickpay: 86e840800907421f9ff7ac409a742da881c441cf
+  YandexPaySDK: efdd828858ab26fa75a3c0505ee62a833e54cf89
+
+PODFILE CHECKSUM: eaafa2e4ed040852b3ec92c373d2d2002018ab60
+
+COCOAPODS: 1.16.2
