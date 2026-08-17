@@ -1,4 +1,4 @@
-[![YandexPayKit](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=YandexPayKit&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay)
+[![YandexPayKit](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=YandexPayKit&version=3.6.5)](https://mvnrepository.com/artifact/com.yandex.pay)
 
 # Yandex Pay Kit Android Sample
 
@@ -59,7 +59,7 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ### Авторизация (AuthScreen)
 
-[![Auth](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=Auth&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/auth)
+[![Auth](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=Auth&version=3.6.5)](https://mvnrepository.com/artifact/com.yandex.pay/auth)
 
 <img src="_assets/auth.png" alt="auth.png" height="420">
 
@@ -79,7 +79,7 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ### Оплата (PayRedirectScreen)
 
-[![PayWithRedirect](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/pay-with-redirect/badge.svg?subject=Redirect&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/pay-with-redirect)
+[![PayWithRedirect](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/pay-with-redirect/badge.svg?subject=Redirect&version=3.6.5)](https://mvnrepository.com/artifact/com.yandex.pay/pay-with-redirect)
 
 <img src="_assets/redirect.png" alt="redirect.png" height="420">
 
@@ -93,7 +93,7 @@ SDK позволяет добавить в приложение оплату п�
 
 ### Пэй виджет (PayWidgetScreen)
 
-[![PayWidget](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inapp/badge.svg?subject=PayWidget&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/inapp)
+[![PayWidget](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inapp/badge.svg?subject=PayWidget&version=3.6.5)](https://mvnrepository.com/artifact/com.yandex.pay/inapp)
 
 <img src="_assets/pay.png" alt="pay.png" height="420">
 
@@ -115,7 +115,7 @@ SDK позволяет добавить в приложение оплату п�
 
 ### Виджет выгод и ассистент (AssistantScreen)
 
-[![Assistant](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/assistant/badge.svg?subject=Assistant&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/assistant)
+[![Assistant](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/assistant/badge.svg?subject=Assistant&version=3.6.5)](https://mvnrepository.com/artifact/com.yandex.pay/assistant)
 
 <img src="_assets/assistant.png" alt="assistant.png" height="420">
 
@@ -129,7 +129,7 @@ SDK позволяет добавить в приложение оплату п�
 
 ### Быстрая оплата с QR (CPQRScreen)
 
-[![CPQR](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/quickpay/badge.svg?subject=CPQR&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/quickpay)
+[![CPQR](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/quickpay/badge.svg?subject=CPQR&version=3.6.5)](https://mvnrepository.com/artifact/com.yandex.pay/quickpay)
 
 <img src="_assets/quickpay.png" width="280">
 
@@ -143,7 +143,7 @@ QR‑код от Яндекс Пэй позволяет добавить в мо
 
 ### Бейджи (InventoryScreen)
 
-[![Inventory](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inventory/badge.svg?subject=Inventory&version=3.3.1)](https://mvnrepository.com/artifact/com.yandex.pay/inventory)
+[![Inventory](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inventory/badge.svg?subject=Inventory&version=3.6.5)](https://mvnrepository.com/artifact/com.yandex.pay/inventory)
 
 <img src="_assets/inventory.png" width="200">
 
