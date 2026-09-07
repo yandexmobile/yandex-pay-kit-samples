@@ -184,7 +184,23 @@ await YPay.instance.quickPay.showOnboardingStoriesScreen()
 <img src="docs/images/modules/in_app_unauthorized.png" alt="In App Pay Widget — без авторизации" width="260"> <img src="docs/images/modules/in_app_authorized.png" alt="In App Pay Widget — авторизован" width="260">
 
 ```swift
+import Foundation
 import YandexPayInApp
+
+let payWidgetModel = YPPayWidgetModel(
+    orderAmount: YPPayWidgetOrderAmount(amount: orderTotal, currency: .rub),
+    cart: YPPayWidgetCart(
+        items: cartItems.map {
+            YPPayWidgetCartItem(
+                productId: $0.productId,
+                total: Decimal(
+                    string: $0.total.replacingOccurrences(of: ",", with: "."),
+                    locale: Locale(identifier: "en_US_POSIX")
+                ) ?? 0
+            )
+        }
+    )
+)
 
 // Создание виджета (SwiftUI)
 let widget: some View = YPay.instance.payInApp.createPayWidgetView(
@@ -193,14 +209,19 @@ let widget: some View = YPay.instance.payInApp.createPayWidgetView(
 )
 
 // Создание виджета (UIKit)
-let widgetView: UIView = YPay.instance.payInApp.createPayWidgetUIView(
+let widgetView: YPPayWidgetUIView = YPay.instance.payInApp.createPayWidgetUIView(
     model: payWidgetModel,
     presentationContextProvider: self
 )
 
+// Обновление суммы или состава корзины без повторного встраивания view в layout
+widgetView.update(model: updatedPayWidgetModel)
+
 // Подписка на изменения состояния виджета
 YPay.instance.payInApp.setStateDelegate(self)
 ```
+
+`YPPayWidgetCartItem.total` — итоговая стоимость всей позиции с учетом количества и скидок. При изменении суммы или состава корзины передайте новую модель: SwiftUI обновит виджет автоматически, а в UIKit вызовите `YPPayWidgetUIView.update(model:)`. Это требуется и тогда, когда общий итог заказа не изменился.
 
 ---
 

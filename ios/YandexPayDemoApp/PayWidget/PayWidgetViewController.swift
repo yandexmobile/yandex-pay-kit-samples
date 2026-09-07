@@ -23,6 +23,7 @@ final class PayWidgetViewController: ScrollableViewController {
   // MARK: - SDK views
 
   private var widgetContainer = UIView()
+  private var payWidgetView: UIView?
 
   private lazy var redirectButton: YPButton = {
     let button: YPButton = YPay.instance.payWithRedirect.createButton(
@@ -127,11 +128,13 @@ final class PayWidgetViewController: ScrollableViewController {
   }
 
   private func refreshWidget() {
-    widgetContainer.subviews.forEach { $0.removeFromSuperview() }
+    payWidgetView?.removeFromSuperview()
+
     let widget = YPay.instance.payInApp.createPayWidgetUIView(
       model: viewModel.payWidgetModel,
       presentationContextProvider: SamplePresentationContextProvider.shared
     )
+    payWidgetView = widget
     widget.translatesAutoresizingMaskIntoConstraints = false
     widgetContainer.addSubview(widget)
     NSLayoutConstraint.activate([
@@ -167,6 +170,7 @@ final class PayWidgetViewController: ScrollableViewController {
       .receive(on: DispatchQueue.main)
       .sink { [weak self] order in
         self?.orderTotalLabel.text = "\(order.resolvedTotalString()) \(order.currencyCode)"
+        self?.refreshWidget()
       }
       .store(in: &cancellables)
 

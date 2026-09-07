@@ -1,5 +1,6 @@
 import SwiftUI
 import Combine
+import Foundation
 import YandexPayInApp
 import YandexPayWithRedirect
 import YandexPayConfiguration
@@ -24,15 +25,14 @@ final class PayWidgetViewModel: ObservableObject {
   }
 
   var payWidgetModel: YPPayWidgetModel {
-    guard passAmount else { return YPPayWidgetModel() }
     return YPPayWidgetModel(
-      amount: orderSettings.order.resolvedTotalDecimal(),
-      currency: orderSettings.order.resolvedCurrency()
+      orderAmount: passAmount
+        ? YPPayWidgetOrderAmount(
+          amount: orderSettings.order.resolvedTotalDecimal(),
+          currency: orderSettings.order.resolvedCurrency()
+        )
+        : nil
     )
-  }
-
-  var widgetIdentity: String {
-    "\(passAmount)-\(orderSettings.order.resolvedTotalString())-\(orderSettings.order.currencyCode)"
   }
 
   private func showResult(_ message: String) {

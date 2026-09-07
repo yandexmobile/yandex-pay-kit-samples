@@ -42,7 +42,6 @@ struct PayWidgetView: View {
           )
         )
         .fixedSize(horizontal: false, vertical: true)
-        .id(viewModel.widgetIdentity)
         .frame(width: widgetWidth)
 
         AnyView(redirectButton)
