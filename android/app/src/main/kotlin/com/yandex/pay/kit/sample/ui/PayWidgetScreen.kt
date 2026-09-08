@@ -70,6 +70,8 @@ import com.yandex.pay.kit.sample.BuildConfig
 import com.yandex.pay.kit.sample.SecureHardware
 import com.yandex.pay.kit.sample.network.PaymentUrlCreator
 import com.yandex.pay.payment.PayOrder
+import com.yandex.pay.payment.PayWidgetCart
+import com.yandex.pay.payment.PayWidgetCartItem
 import com.yandex.pay.payment.PaymentData
 import com.yandex.pay.session.PaymentMethodType
 import com.yandex.pay.withredirect.api.launcher.YPayContractParams
@@ -252,9 +254,8 @@ internal fun PayWidgetScreen(
                                         ViewGroup.LayoutParams.WRAP_CONTENT,
                                     )
                                     setOrder(
-                                        PayOrder(
-                                            amount = orderAmount.toBigDecimalOrNull()
-                                                ?: BigDecimal(DEFAULT_AMOUNT),
+                                        createPayWidgetOrder(
+                                            amount = orderAmount,
                                             currencyCode = currencyCode,
                                         ),
                                     )
@@ -288,9 +289,8 @@ internal fun PayWidgetScreen(
                             .filterIsInstance<YPayInAppWidget>()
                             .firstOrNull()
                         widget?.setOrder(
-                            PayOrder(
-                                amount = orderAmount.toBigDecimalOrNull()
-                                    ?: BigDecimal(DEFAULT_AMOUNT),
+                            createPayWidgetOrder(
+                                amount = orderAmount,
                                 currencyCode = currencyCode,
                             ),
                         )
@@ -593,7 +593,24 @@ private fun YPayAuthorizationState.toShortName(): String = when (this) {
     is YPayAuthorizationState.Unauthorized -> "Unauthorized"
 }
 
+private fun createPayWidgetOrder(amount: String, currencyCode: String): PayOrder {
+    val decimalAmount = amount.toBigDecimalOrNull() ?: BigDecimal(DEFAULT_AMOUNT)
+    return PayOrder(
+        amount = decimalAmount,
+        currencyCode = currencyCode,
+        cart = PayWidgetCart(
+            items = listOf(
+                PayWidgetCartItem(
+                    productId = SAMPLE_PRODUCT_ID,
+                    total = decimalAmount,
+                ),
+            ),
+        ),
+    )
+}
+
 private const val DEFAULT_AMOUNT = "100"
 private const val DEFAULT_CURRENCY = "RUB"
+private const val SAMPLE_PRODUCT_ID = "sample_product"
 private val CURRENCIES = listOf("RUB", "USD", "EUR")
 private val DEFAULT_PAYMENT_METHODS = listOf(PaymentMethodType.CARD, PaymentMethodType.SPLIT)
