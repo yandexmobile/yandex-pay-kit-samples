@@ -75,6 +75,7 @@ struct PayWidgetView: View {
                 .foregroundStyle(.secondary)
             }
             Toggle("Send amount to widget", isOn: $viewModel.passAmount)
+            Toggle("Send cart to widget", isOn: $viewModel.passCart)
             NavigationLink("Edit Order") {
               OrderSettingsView(orderSettings: orderSettings, urlProvider: urlProvider)
             }

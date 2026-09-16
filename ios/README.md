@@ -185,14 +185,15 @@ await YPay.instance.quickPay.showOnboardingStoriesScreen()
 
 ```swift
 import Foundation
+import YandexPayConfiguration
 import YandexPayInApp
 
 let payWidgetModel = YPPayWidgetModel(
     orderAmount: YPPayWidgetOrderAmount(amount: orderTotal, currency: .rub),
-    cart: YPPayWidgetCart(
+    cart: YPPayCart(
         items: cartItems.map {
-            YPPayWidgetCartItem(
-                productId: $0.productId,
+            YPPayCartItem(
+                productID: $0.productId,
                 total: Decimal(
                     string: $0.total.replacingOccurrences(of: ",", with: "."),
                     locale: Locale(identifier: "en_US_POSIX")
@@ -221,7 +222,7 @@ widgetView.update(model: updatedPayWidgetModel)
 YPay.instance.payInApp.setStateDelegate(self)
 ```
 
-`YPPayWidgetCartItem.total` — итоговая стоимость всей позиции с учетом количества и скидок. При изменении суммы или состава корзины передайте новую модель: SwiftUI обновит виджет автоматически, а в UIKit вызовите `YPPayWidgetUIView.update(model:)`. Это требуется и тогда, когда общий итог заказа не изменился.
+`YPPayCartItem.total` — итоговая стоимость всей позиции с учетом количества и скидок. При изменении суммы или состава корзины передайте новую модель: SwiftUI обновит виджет автоматически, а в UIKit вызовите `YPPayWidgetUIView.update(model:)`. Это требуется и тогда, когда общий итог заказа не изменился.
 
 ---
 

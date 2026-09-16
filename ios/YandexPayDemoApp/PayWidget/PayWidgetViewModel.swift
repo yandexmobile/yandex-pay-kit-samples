@@ -10,6 +10,7 @@ final class PayWidgetViewModel: ObservableObject {
   @Published var widgetState: String = "-"
   @Published var paymentResult: String?
   @Published var passAmount: Bool = true
+  @Published var passCart: Bool = true
 
   let urlProvider: PaymentURLProvider
   private let orderSettings: OrderSettings
@@ -30,6 +31,19 @@ final class PayWidgetViewModel: ObservableObject {
         ? YPPayWidgetOrderAmount(
           amount: orderSettings.order.resolvedTotalDecimal(),
           currency: orderSettings.order.resolvedCurrency()
+        )
+        : nil,
+      cart: passCart
+        ? YPPayCart(
+          items: orderSettings.order.cartItems.map {
+            YPPayCartItem(
+              productID: $0.productId,
+              total: Decimal(
+                string: $0.total.replacingOccurrences(of: ",", with: "."),
+                locale: Locale(identifier: "en_US_POSIX")
+              ) ?? 0
+            )
+          }
         )
         : nil
     )

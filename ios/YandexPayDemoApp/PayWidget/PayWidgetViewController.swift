@@ -44,6 +44,7 @@ final class PayWidgetViewController: ScrollableViewController {
   private let widgetStateLabel = label("", style: .subheadline, color: .secondaryLabel)
   private let orderTotalLabel = label("", style: .subheadline, color: .secondaryLabel)
   private let passAmountSwitch = UISwitch()
+  private let passCartSwitch = UISwitch()
   private let activityIndicator = UIActivityIndicatorView(style: .medium)
 
   private let errorLabel: UILabel = {
@@ -97,7 +98,8 @@ final class PayWidgetViewController: ScrollableViewController {
       ], spacing: 8)),
       card(contents: vStack([
         hStack([label("Order total"), UIView(), orderTotalLabel]),
-        hStack([label("Send amount to widget"), UIView(), passAmountSwitch])
+        hStack([label("Send amount to widget"), UIView(), passAmountSwitch]),
+        hStack([label("Send cart to widget"), UIView(), passCartSwitch])
       ], spacing: 12)),
       sectionCard(
         header: "Actions",
@@ -120,10 +122,16 @@ final class PayWidgetViewController: ScrollableViewController {
 
   private func setupActions() {
     passAmountSwitch.addTarget(self, action: #selector(passAmountChanged), for: .valueChanged)
+    passCartSwitch.addTarget(self, action: #selector(passCartChanged), for: .valueChanged)
   }
 
   @objc private func passAmountChanged() {
     viewModel.passAmount = passAmountSwitch.isOn
+    refreshWidget()
+  }
+
+  @objc private func passCartChanged() {
+    viewModel.passCart = passCartSwitch.isOn
     refreshWidget()
   }
 
@@ -149,6 +157,7 @@ final class PayWidgetViewController: ScrollableViewController {
 
   private func bindViewModel() {
     passAmountSwitch.setOn(viewModel.passAmount, animated: false)
+    passCartSwitch.setOn(viewModel.passCart, animated: false)
     orderTotalLabel.text = "\(orderSettings.order.resolvedTotalString()) \(orderSettings.order.currencyCode)"
 
     urlProvider.$isLoading
