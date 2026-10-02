@@ -1,4 +1,4 @@
-[![YandexPayKit](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=YandexPayKit&version=3.9.4)](https://mvnrepository.com/artifact/com.yandex.pay)
+[![YandexPayKit](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=YandexPayKit&version=3.9.5)](https://mvnrepository.com/artifact/com.yandex.pay)
 
 # Yandex Pay Kit Android Sample
 
@@ -44,7 +44,7 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 Эти параметры пробрасываются в манифест и используются при инициализации SDK.
 
-[Документация: получение идентификаторов](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/android/#shag-1-poluchite-identifikatory)
+[Документация: получение идентификаторов](https://pay.yandex.ru/docs/ru/custom/mobile-sdk/yandex-pay-kit/android/auth/flow#step-1)
 
 ## Запуск
 
@@ -59,7 +59,7 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ### Авторизация (AuthScreen)
 
-[![Auth](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=Auth&version=3.9.4)](https://mvnrepository.com/artifact/com.yandex.pay/auth)
+[![Auth](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=Auth&version=3.9.5)](https://mvnrepository.com/artifact/com.yandex.pay/auth)
 
 <img src="_assets/auth.png" alt="auth.png" height="420">
 
@@ -71,15 +71,15 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 [Документация: двойная авторизация](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/)
 
-[Документация: интеграция авторизации](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/android/)
+[Документация: интеграция авторизации](https://pay.yandex.ru/docs/ru/custom/mobile-sdk/yandex-pay-kit/android/auth/flow)
 
-[Документация: миграция с LoginSDK](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/auth/android/auth-migration)
+[Документация: миграция с LoginSDK](https://pay.yandex.ru/docs/ru/custom/mobile-sdk/yandex-pay-kit/android/auth/auth-migration)
 
 ---
 
 ### Оплата (PayRedirectScreen)
 
-[![PayWithRedirect](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/pay-with-redirect/badge.svg?subject=Redirect&version=3.9.4)](https://mvnrepository.com/artifact/com.yandex.pay/pay-with-redirect)
+[![PayWithRedirect](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/pay-with-redirect/badge.svg?subject=Redirect&version=3.9.5)](https://mvnrepository.com/artifact/com.yandex.pay/pay-with-redirect)
 
 <img src="_assets/redirect.png" alt="redirect.png" height="420">
 
@@ -87,13 +87,13 @@ SDK позволяет добавить в приложение оплату п�
 
 Для работы кнопки оплаты нужно нажать "Create url" — после этого ссылка отобразится в поле **Payment Url** и будет использоваться для перехода в кнопке "Оплатить с Пэй".
 
-[Документация: подключение оплаты по платежной ссылке](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/redirect/android/)
+[Документация: подключение оплаты по платежной ссылке](https://pay.yandex.ru/docs/ru/custom/mobile-sdk/yandex-pay-kit/android/redirect/flow)
 
 ---
 
 ### Пэй виджет (PayWidgetScreen)
 
-[![PayWidget](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inapp/badge.svg?subject=PayWidget&version=3.9.4)](https://mvnrepository.com/artifact/com.yandex.pay/inapp)
+[![PayWidget](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inapp/badge.svg?subject=PayWidget&version=3.9.5)](https://mvnrepository.com/artifact/com.yandex.pay/inapp)
 
 <img src="_assets/pay.png" alt="pay.png" height="420">
 
@@ -129,13 +129,13 @@ payWidget.setOrder(
 > **Подключение оплаты**
 > Чтобы после отображения виджета можно было запустить оплату, дополнительно подключите модуль YandexPayWithRedirect. Без него виджет в UI есть, но платежную сессию открыть не получится — ее запускает только API payWithRedirect (форма или кнопка).
 
-[Документация: Пэй виджет](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/pay-widget/android/)
+[Документация: Пэй виджет](https://pay.yandex.ru/docs/ru/custom/mobile-sdk/yandex-pay-kit/android/pay-widget/flow)
 
 ---
 
 ### Виджет выгод и ассистент (AssistantScreen)
 
-[![Assistant](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/assistant/badge.svg?subject=Assistant&version=3.9.4)](https://mvnrepository.com/artifact/com.yandex.pay/assistant)
+[![Assistant](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/assistant/badge.svg?subject=Assistant&version=3.9.5)](https://mvnrepository.com/artifact/com.yandex.pay/assistant)
 
 <img src="_assets/assistant.png" alt="assistant.png" height="420">
 
@@ -143,13 +143,13 @@ payWidget.setOrder(
 
 Чекбокс Widget settings демонстрирует работу параметра `Clickability`, который определяет вид и кликабельность виджета всегда либо только в авторизованном состоянии.
 
-[Документация по интеграции виджета и его параметрах](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/assistant/benefit-widget/android/)
+[Документация по интеграции виджета и его параметрах](https://pay.yandex.ru/docs/ru/custom/mobile-sdk/yandex-pay-kit/android/assistant/benefit-widget)
 
 ---
 
 ### Быстрая оплата с QR (CPQRScreen)
 
-[![CPQR](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/quickpay/badge.svg?subject=CPQR&version=3.9.4)](https://mvnrepository.com/artifact/com.yandex.pay/quickpay)
+[![CPQR](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/quickpay/badge.svg?subject=CPQR&version=3.9.5)](https://mvnrepository.com/artifact/com.yandex.pay/quickpay)
 
 <img src="_assets/quickpay.png" width="280">
 
@@ -163,13 +163,13 @@ QR‑код от Яндекс Пэй позволяет добавить в мо
 
 ### Бейджи (InventoryScreen)
 
-[![Inventory](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inventory/badge.svg?subject=Inventory&version=3.9.4)](https://mvnrepository.com/artifact/com.yandex.pay/inventory)
+[![Inventory](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inventory/badge.svg?subject=Inventory&version=3.9.5)](https://mvnrepository.com/artifact/com.yandex.pay/inventory)
 
 <img src="_assets/inventory.png" width="200">
 
 Визуализация 2 типов бейджей (всего библиотекой поддерживается 4 вида), с настройкой цвета и типа (подробный и компактный).
 
-[Документация по интеграции и по всем типам бейджей](https://pay.yandex.ru/docs/ru/custom/yandex-pay-kit/inventory/android/)
+[Документация по интеграции и по всем типам бейджей](https://pay.yandex.ru/docs/ru/custom/mobile-sdk/yandex-pay-kit/android/inventory/badges)
 
 ## Частые проблемы
 
