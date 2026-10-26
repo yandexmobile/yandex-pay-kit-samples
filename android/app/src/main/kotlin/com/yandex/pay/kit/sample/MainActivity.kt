@@ -93,6 +93,7 @@ class MainActivity : FragmentActivity() {
         override fun onPaymentResult(quickpayResult: QuickPayResult) {
             cpqrResult.value = when (quickpayResult) {
                 QuickPayResult.Success -> "Success"
+                QuickPayResult.WaitingForApprove -> null
                 QuickPayResult.Failure -> "Failure"
             }
         }
