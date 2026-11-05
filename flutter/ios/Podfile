@@ -49,14 +49,14 @@ target 'Runner' do
   # здесь. YandexPayConfiguration подтягивается транзитивно через subspec.
   pod 'YandexPaySDK',
       :git => 'https://github.com/yandexmobile/yandex-pay-ios.git',
-      :tag => 'v2.5.3',
+      :tag => 'v2.10.7',
       :subspecs => ['YandexQuickPay']
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
 post_install do |installer|
-  # YandexPaySDK 2.5.3 mutates CocoaPods embed scripts at build time, which
+  # YandexPaySDK mutates CocoaPods embed scripts at build time, which
   # races parallel Runner builds. Materialize those changes during pod install.
   YandexPaySdkPodHelpers.materialize_runtime_frameworks(installer)
 
