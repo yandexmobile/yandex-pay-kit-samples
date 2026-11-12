@@ -1,5 +1,3 @@
-[![YandexPayKit](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=YandexPayKit&version=3.10.7)](https://mvnrepository.com/artifact/com.yandex.pay)
-
 # Yandex Pay Kit Android Sample
 
 <img src="_assets/logo.png" alt="logo.png" height="200">
@@ -36,6 +34,8 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ## Конфигурация
 
+SDK загружается из публичного Maven-репозитория `https://mobile.s3.yandex.net/`. Репозиторий уже подключён в `settings.gradle.kts`; ключи доступа не нужны.
+
 В `app/build.gradle.kts` уже настроены тестовые значения:
 
 - `YANDEX_CLIENT_ID = b8f475015d0640fd8b870b5838e2e623`
@@ -59,8 +59,6 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ### Авторизация (AuthScreen)
 
-[![Auth](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/auth/badge.svg?subject=Auth&version=3.10.7)](https://mvnrepository.com/artifact/com.yandex.pay/auth)
-
 <img src="_assets/auth.png" alt="auth.png" height="420">
 
 Отдельный процесс Yandex ID-авторизации (`YPay.auth.getAuthContract()`). На `YPayAuthResult.Success` возвращается merchant token — пример того, как сторона мерчанта получает токен для авторизации пользователя на своём бэкенде.
@@ -79,8 +77,6 @@ Yandex Pay Kit предоставляет готовые компоненты д
 
 ### Оплата (PayRedirectScreen)
 
-[![PayWithRedirect](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/pay-with-redirect/badge.svg?subject=Redirect&version=3.10.7)](https://mvnrepository.com/artifact/com.yandex.pay/pay-with-redirect)
-
 <img src="_assets/redirect.png" alt="redirect.png" height="420">
 
 SDK позволяет добавить в приложение оплату по платежной ссылке и кнопку с поддержкой разных видов оплаты.
@@ -92,8 +88,6 @@ SDK позволяет добавить в приложение оплату п�
 ---
 
 ### Пэй виджет (PayWidgetScreen)
-
-[![PayWidget](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inapp/badge.svg?subject=PayWidget&version=3.10.7)](https://mvnrepository.com/artifact/com.yandex.pay/inapp)
 
 <img src="_assets/pay.png" alt="pay.png" height="420">
 
@@ -135,8 +129,6 @@ payWidget.setOrder(
 
 ### Виджет выгод и ассистент (AssistantScreen)
 
-[![Assistant](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/assistant/badge.svg?subject=Assistant&version=3.10.7)](https://mvnrepository.com/artifact/com.yandex.pay/assistant)
-
 <img src="_assets/assistant.png" alt="assistant.png" height="420">
 
 Виджет выгод (бенефитов), который поддерживает авторизацию пользователя. По клику отображает экран авторизации либо экран ассистента, который рассказывает пользователю про скидки и бонусы.
@@ -149,8 +141,6 @@ payWidget.setOrder(
 
 ### Быстрая оплата с QR (CPQRScreen)
 
-[![CPQR](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/quickpay/badge.svg?subject=CPQR&version=3.10.7)](https://mvnrepository.com/artifact/com.yandex.pay/quickpay)
-
 <img src="_assets/quickpay.png" width="280">
 
 QR‑код от Яндекс Пэй позволяет добавить в мобильное приложение быструю оплату в офлайн-точках. Пользователь один раз авторизуется, после чего может оплачивать покупки: приложение генерирует QR-код, который кассир сканирует на терминале.
@@ -162,8 +152,6 @@ QR‑код от Яндекс Пэй позволяет добавить в мо
 ---
 
 ### Бейджи (InventoryScreen)
-
-[![Inventory](https://maven-badges.sml.io/sonatype-central/com.yandex.pay/inventory/badge.svg?subject=Inventory&version=3.10.7)](https://mvnrepository.com/artifact/com.yandex.pay/inventory)
 
 <img src="_assets/inventory.png" width="200">
 

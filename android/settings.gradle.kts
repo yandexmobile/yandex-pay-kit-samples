@@ -16,9 +16,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://mobile.s3.yandex.net/")
+        }
     }
 }
 
 rootProject.name = "YandexPayKitSample"
 include(":app")
- 
