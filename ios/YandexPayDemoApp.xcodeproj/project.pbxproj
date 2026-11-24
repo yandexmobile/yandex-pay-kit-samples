@@ -383,7 +383,7 @@
 			repositoryURL = "https://github.com/yandexmobile/yandex-pay-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = "2.11.4";
+				version = "2.12.2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
